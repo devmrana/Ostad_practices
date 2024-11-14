@@ -1,5 +1,5 @@
 def greeting():
-    print("Favourite Foods Manager\n-------------------------")
+    print("\nFavourite Foods Manager\n-------------------------")
     # Display the options
     for index, value in enumerate(options, start=1):
         print(f"{index}. {value}")
