@@ -1,6 +1,7 @@
 # Banking Management System
 class BankAccount:
     def __init__(self, account_holder, initial_balance=0):
+        # Initialize a bank account object with the account holder's name and initial balance.
         self.account_holder = account_holder
         self.balance = initial_balance
 
