@@ -14,4 +14,4 @@ Implementation complete:
 9. Application Design picture attached
 10. Delete contact (Bonus)
 
-#I have done all the assignment.
+#I have complete all the tasks.
