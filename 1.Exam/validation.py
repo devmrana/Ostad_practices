@@ -1,17 +1,35 @@
+# Name validation
 def validate_name(name):
-    return isinstance(name, str) and name.strip() != ""
+
+    if not isinstance(name, str) and name.strip():
+        return False
+    # if not name.strip():
+    #     return False
+
+    if not all(part.isalpha() for part in name.split()):
+        return False
+    return True
+
+    # return isinstance(name, str) and name.strip().isalpha() != ""
 
 
+# Phone number validation
 def validate_phone(phone, contacts):
-    
     if phone in [contact["phone"] for contact in contacts]:
         print("Error: Phone number already exists.")
-        return
-    return phone.isdigit()
+        return False
+    if not phone.isdigit():
+        print("Error: Phone number must be a numeric value.")
+        return False
+    if len(phone) != 11:
+        print("Error: Phone number must be exactly 11 digits.")
+        return False
+    return True
 
 
+# Email validation
 def validate_email(email):
-    if "@" in email and "." in email:
-        return True
-    print("Error: Please provide a valid email address.")
-    return False
+    if "@" not in email or "." not in email:
+        print("Error: Please provide a valid email address.")
+        return False
+    return True

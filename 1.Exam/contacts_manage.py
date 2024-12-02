@@ -9,7 +9,7 @@ def add_contact(contacts):
         return
     phone = input("Enter phone number: ")
     if not validate_phone(phone, contacts):
-        print("Error: Phone number must be a numeric value.")
+        # print("Error: Phone number must be a numeric value.")
         return
 
     email = input("Enter email: ")
@@ -78,11 +78,10 @@ def update_contact(contacts):
             new_address = input("Enter new address: ")
 
             # Validate and update fields
-            if new_name.strip():
-                if not validate_name(new_name):
-                    print("Error: Invalid name.")
-                    return
-                contact["name"] = new_name
+            if not validate_name(new_name):
+                print("Error: Name must be a string.")
+                return
+            contact["name"] = new_name
 
             # phone number is unique, that' why hide from phone update
             # if new_phone.strip():

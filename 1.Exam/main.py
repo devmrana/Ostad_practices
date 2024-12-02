@@ -9,8 +9,9 @@ from file_handler import load_contacts, save_contacts
 
 
 def main():
-    contacts = load_contacts()  # Load existing contacts from file at the start.
+    contacts = load_contacts()  # previously saved contact data is loaded
     while True:
+        print("\n### Welcome to Contact Management System ###")
         print("\n--- Contact Book Menu ---")
         print("1. Add Contact")
         print("2. View All Contacts")
@@ -37,7 +38,9 @@ def main():
             print("Exit. Thanks for using Contact Management System")
             break
         else:
-            print("Invalid choice. Please try again.")
+            print(
+                "Invalid choice. Please try again. Please select a number from the list."
+            )
 
 
 if __name__ == "__main__":

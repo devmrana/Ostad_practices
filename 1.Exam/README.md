@@ -1,7 +1,8 @@
 #Contact Management System
 
 Implementation complete:
-(All features are accessible from this menu)
+(All features are accessible from menu)
+
 1. Add contact (Name, Email, Phone Number and Address.)
 2. same phone number cannot be assigned to multiple names.
 3. Display all saved contacts
@@ -12,6 +13,3 @@ Implementation complete:
 8. All Error Handle
 9. Application Design picture attached
 10. Delete contact (Bonus)
-
-
-I have done all the assignment.
