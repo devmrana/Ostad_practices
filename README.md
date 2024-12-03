@@ -1,6 +1,7 @@
 # Ostad_practices
 
-1. Basic calculator
-2. Basic Food Manager
-3. Library Management System
-4. Banking Management System
+1. Basic calculator (File: 1project.py)
+2. Basic Food Manager (File: 2.project.py)
+3. Library Management System (folder: 3.project)
+4. Banking Management System (File: 4.project.py)
+5. Contact Management System (Folder: 1.Exam)
