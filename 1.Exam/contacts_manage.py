@@ -72,8 +72,7 @@ def update_contact(contacts):
             )
             print("Leave a field blank to keep the current value.")
             new_name = input("Enter new name: ")
-            # phone number is unique, that' why hide from phone update
-            # new_phone = input("Enter new phone number: ")
+
             new_email = input("Enter new email: ")
             new_address = input("Enter new address: ")
 
@@ -83,20 +82,11 @@ def update_contact(contacts):
                 return
             contact["name"] = new_name
 
-            # phone number is unique, that' why hide from phone update
-            # if new_phone.strip():
-            #     if not validate_phone(new_phone):
-            #         print("Error: Invalid phone number.")
-            #         return
-            #     if new_phone != phone and any(c['phone'] == new_phone for c in contacts):
-            #         print("Error: Phone number already exists.")
-            #         return
-            #     contact['phone'] = new_phone
-
-            if not validate_email(new_email):
-                print("So, Email not updated!")
-                return
-            contact["email"] = new_email
+            if new_email.strip():  # Only update if a new email is provided
+                if not validate_email(new_email):
+                    print("Error: Invalid email format. Email not updated.")
+                else:
+                    contact["email"] = new_email
 
             if new_address.strip():
                 contact["address"] = new_address
