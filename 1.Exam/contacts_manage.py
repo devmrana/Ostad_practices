@@ -72,15 +72,15 @@ def update_contact(contacts):
             )
             print("Leave a field blank to keep the current value.")
             new_name = input("Enter new name: ")
-
             new_email = input("Enter new email: ")
             new_address = input("Enter new address: ")
 
             # Validate and update fields
-            if not validate_name(new_name):
-                print("Error: Name must be a string.")
-                return
-            contact["name"] = new_name
+            if new_name.strip():
+                if not validate_name(new_name):
+                    print("Error: Name must be a string.")
+                else:
+                    contact["name"] = new_name
 
             if new_email.strip():  # Only update if a new email is provided
                 if not validate_email(new_email):
