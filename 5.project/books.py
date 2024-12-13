@@ -3,12 +3,11 @@ from datetime import datetime
 
 BOOKS_CSV = './5.project/books.csv'
 
-# Ensure CSV file creation for books
 
 def create_books_file():
     try:
         with open(BOOKS_CSV, mode='r') as file:
-            pass  # If file exists, do nothing
+            pass  
     except FileNotFoundError:
         with open(BOOKS_CSV, mode='w', newline='') as file:
             writer = csv.writer(file)
