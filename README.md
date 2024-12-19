@@ -6,3 +6,4 @@
 4. Banking Management System (File: 4.project.py)
 5. Contact Management System (Folder: 1.Exam)
 6. Library Management (Folder: 5.project)
+7. Hospital_Management_System_Database_Design
