@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">BrandName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Product Image Carousel -->
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image1.jpg" class="d-block w-100" alt="Product Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image2.jpg" class="d-block w-100" alt="Product Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image3.jpg" class="d-block w-100" alt="Product Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-md-6">
+                <h1>Product Name</h1>
+                <p class="text-muted">Amazing Tagline for the Product</p>
+                <h3 class="text-success">$99.99</h3>
+                <ul class="list-unstyled mt-4">
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Key Feature 1</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Key Feature 2</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Key Feature 3</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Key Feature 4</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Accordion Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="accordion" id="productAccordion">
+                    <!-- Product Description -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="descriptionHeading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#descriptionCollapse" aria-expanded="true"
+                                aria-controls="descriptionCollapse">
+                                Product Description
+                            </button>
+                        </h2>
+                        <div id="descriptionCollapse" class="accordion-collapse collapse show"
+                            aria-labelledby="descriptionHeading" data-bs-parent="#productAccordion">
+                            <div class="accordion-body">
+                                Sound bigger than it looks: A peak power of 2×140 watts contained in a sleek, small speaker. Beosound A1 brings
+                                soul-stirring sound to any trip.
+                                Waterproof for life’s thrills and spills: Share your soundtrack on the go. A durable, wireless speaker designed for life
+                                on the road, chilled pool holidays or a hectic home life.
+                                A battery to match you: Lose yourself in the music, listen in to your favourite podcast or chat on speakerphone for up
+                                to 18 hours at increased volume, and for even longer on lower settings.
+                                Sleek yet strong: Elegantly self-contained and designed to travel. Beosound A1 is fully waterproof, dust-resistant and
+                                encased in a tough aluminium dome.
+                                Alexa speaker: Built-in voice control and Amazon Alexa make it easy to say – and get – what you want.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Specifications -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="specsHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#specsCollapse" aria-expanded="false" aria-controls="specsCollapse">
+                                Technical Specifications
+                            </button>
+                        </h2>
+                        <div id="specsCollapse" class="accordion-collapse collapse" aria-labelledby="specsHeading"
+                            data-bs-parent="#productAccordion">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>SKU: Beosound A1 2nd</li>
+                                    <li>Categories: AUDIO GEAR, Bluetooth Speaker</li>
+                                    <li>Tag: Arrival</li>
+                                    <li>Specification 4: Detail</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>Follow us on:</p>
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
